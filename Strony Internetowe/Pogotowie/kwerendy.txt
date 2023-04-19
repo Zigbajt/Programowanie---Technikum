@@ -1,0 +1,4 @@
+INSERT INTO `zgloszenia`(`id`, `ratownicy_id`, `dyspozytorzy_id`, `adres`, `pilne`, `czas_zgloszenia`) VALUES (null,1,4,"Warszawa Staszica 34/5",1,"07:51:00");
+SELECT zgloszenia.adres,zgloszenia.dyspozytorzy_id FROM zgloszenia WHERE zgloszenia.ratownicy_id="3";
+CREATE USER 'anna'@'%' IDENTIFIED BY "Anna4!";
+GRANT SELECT, INSERT, UPDATE ON  `ratownictwo.zgloszenia`.* TO 'anna'@'%';

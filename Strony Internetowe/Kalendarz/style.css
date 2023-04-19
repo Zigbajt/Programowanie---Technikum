@@ -1,0 +1,73 @@
+body{
+	background-color:#456578;
+	text-align:center;
+}
+#container{
+	margin-left:auto;
+	margin-right:auto;
+	width:80%;
+	margin-left:20%;
+	
+	
+}
+#cofnij{
+	float:left;
+	padding-top:5px;
+	height:35px;
+	width:10%;
+	background-color:yellow;
+	font-size:25px;
+	cursor:pointer;
+	border-radius:10px;
+	opacity:0.95;
+	color:#444;
+}
+#cofnij:hover {
+	opacity:1.0;
+	color:#000;
+}
+
+#Nazwa{
+	float:left;
+	font-size:30px;
+	height:40px;
+	width:55%;
+	color:yellow;
+
+}
+#dalej{
+	float:left;
+	padding-top:5px;
+	height:35px;
+	width:10%;
+	background-color:yellow;
+	font-size:25px;
+	cursor:pointer;
+	border-radius:10px;
+	opacity:0.95;
+	color:#444;
+}
+#dalej:hover {
+	opacity:1.0;
+	color:#000;
+}
+#zawartosc{
+	margin-top:20px;
+	margin-left:auto;
+	margin-right:auto;
+	width:60%;
+	height:407px;
+	background-color:#785659;
+	padding:20px;
+	
+}
+.kartka{
+	height:40px;
+	width:12%;
+	padding:1%;
+	float:left;
+	border:solid 1px ;
+	font-size:17px;
+	
+	
+}

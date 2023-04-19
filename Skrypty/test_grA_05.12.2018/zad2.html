@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<title>Zadanie2</title>
+	<script >
+		var tekst="Ala ma kota";
+		var t=0;
+		var s=0;
+		var o=0;
+		
+		while(t<tekst.length){
+			if(tekst[t]==" ")s++;
+			t++;
+		}
+		document.write("ilość wyrazów wynosi: "+ (s+1)+"<br/>"); 
+		
+		var text='';
+		for (var i=0; i<tekst.length; i++) {
+		if (i%2===0){
+        text += tekst.charAt(i).toLowerCase();
+		}else{
+        text += tekst.charAt(i).toUpperCase();
+		}
+		}
+		document.write(text);
+	
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

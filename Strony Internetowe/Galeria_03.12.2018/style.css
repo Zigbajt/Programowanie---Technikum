@@ -1,0 +1,158 @@
+body{
+	background-color:#535629;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+}
+header{
+	margin-left:auto;
+	margin-right:auto;
+	width:80%;
+	margin-bottom:30px;
+}
+#tytul{
+	float:left;
+	width:50%;
+	height:80px;
+	
+}
+#tytul1{
+	float:left;
+	width:50%;
+	height:80px;
+	padding-top:8px;
+}
+#menu1{
+	position:absolute;
+	padding:15px;
+	font-size:20px;
+	width:100px;
+	background-color:#769785;
+	border:solid 2px yellow;
+	text-decoration:none;
+	color:#000;
+	border-radius: 7.5em 5em;
+}
+#menu1:hover{
+	z-index:5;	
+}
+#menu2{
+	position:absolute;
+	padding:15px;
+	font-size:20px;
+	width:100px;
+	background-color:red;
+	margin-left:100px;
+	border:solid 2px yellow;
+	text-decoration:none;
+	color:#000;
+	border-radius: 7.5em 5em;
+}
+#menu2:hover{
+	z-index:5;	
+}
+#menu3{
+	position:absolute;
+	padding:15px;
+	font-size:20px;
+	width:100px;
+	background-color:#454679;
+	margin-left:200px;
+	border:solid 2px yellow;
+	text-decoration:none;
+	color:#000;
+	border-radius: 7.5em 5em;
+}
+#menu3:hover{
+	z-index:5;	
+}
+#menu4{
+	position:absolute;
+	padding:15px;
+	font-size:20px;
+	width:100px;
+	background-color:green;
+	margin-left:300px;
+	border:solid 2px yellow;
+	text-decoration:none;
+	color:#000;
+	border-radius: 7.5em 5em;
+}
+#menu4:hover{
+	z-index:5;	
+}
+h1{
+	
+	
+	
+}
+main{
+	margin-left:auto;
+	margin-right:auto;
+	width:1000px;
+	
+	
+}
+
+.photo{
+	float:left;
+	width:306px;
+	margin:1%;
+	
+	
+}
+.photo img{
+	opacity:0.75;
+	border:solid 3px yellow;
+	border-radius: 7.5em 5em;
+	
+	
+}
+.photo img:hover{
+	opacity:1;
+	border:solid 3px red;
+	
+}
+#zwieksz{
+	position:absolute;
+	background-color:red;
+	width:750px;
+	height:400px;
+	margin-top:-420px;
+	margin-left:10%;
+	margin-right:10%;
+	text-align:right;
+	z-index:-1;
+	opacity:0;
+}
+#zwieksz button{
+	padding:5px;
+	
+}
+footer{
+	background:url(img/tlo.jpg);
+	height:60px;
+	margin-top:20px;
+	width:100%;
+	padding-top:180px;
+	
+	
+	
+}
+#text{
+	margin-left:auto;
+	margin-right:auto;
+	background-color: #ffffff;
+	border: 1px solid black;
+	opacity: 0.5;
+	height:50px;
+	width:80%;
+}
+
+#text p{
+	font-weight: bold;
+	color: #000000;
+	
+}
+	
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="utf-8">
+	</head>
+	<body>
+	<fieldset>
+	<legend>Kalkulator temperatury </legend>
+	<p>C<sup>o</sup> <input type="text" id="temperatura"/></p>
+	<p>vat:<select name="rodzaj" id="rodzaj">
+			<option value=""></option>
+			<option value="a1">&ordm;K</option>
+			<option value="a2">&ordm;F</option>
+		</select>
+		</p>
+		<input type="button" id="oblicz" value="Oblicz"/>
+		<p>Wynik:</p>
+		<div id="wynik">
+		
+		</div>
+	</fieldset>
+	<script>
+		document.getElementById("oblicz").onclick=dzialanie
+		
+		function dzialanie(){
+			
+			var temp=document.getElementById("temperatura").value;
+			var wynik=document.getElementById("wynik");
+			var rodzaj = document.getElementById("rodzaj");
+			var oblicz;
+			rodzaj_wybor = rodzaj.options[rodzaj.selectedIndex].value;
+		
+			temp=temp*1;
+			if(temp=="" || isNaN(temp)){
+				
+				wynik.innerHTML="Zostały podane błędne dane temperatury !!";
+			}
+			else{
+				if(rodzaj_wybor == ""){
+			
+				wynik.innerHTML="Nie został wybrany system temperatury !!";
+				}else if(rodzaj_wybor =="a1"){
+					oblicz=temp+273.15;
+				}else if(rodzaj_wybor =="a2"){
+					oblicz=(temp*1.5)+32;
+				}
+			}
+			wynik.innerHTML=oblicz;
+		}
+	</script>
+	</body>
+</html>

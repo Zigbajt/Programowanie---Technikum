@@ -1,0 +1,15 @@
+
+.icon-forward:before { content: '\e800'; } /* '' */
+.icon-home:before { content: '\e801'; } /* '' */
+.icon-calculator:before { content: '\e802'; } /* '' */
+.icon-news:before { content: '\e803'; } /* '' */
+.icon-search:before { content: '\e804'; } /* '' */
+.icon-pitch:before { content: '\e82a'; } /* '' */
+.icon-post:before { content: '\e82c'; } /* '' */
+.icon-reply:before { content: '\f112'; } /* '' */
+.icon-facebook-rect:before { content: '\f301'; } /* '' */
+.icon-twitter-bird:before { content: '\f303'; } /* '' */
+.icon-googleplus-rect:before { content: '\f309'; } /* '' */
+.icon-skype:before { content: '\f30b'; } /* '' */
+.icon-linkedin:before { content: '\f31a'; } /* '' */
+.icon-instagram:before { content: '\f31e'; } /* '' */

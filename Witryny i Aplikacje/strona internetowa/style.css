@@ -1,0 +1,54 @@
+ #conteiner
+ {
+ width:1000px;
+ margin-left:auto;
+ margin-right:auto; 
+ }
+ #logo
+ {
+	background-color:black;
+	color:white;
+	text-align:center;
+	padding:15px;
+ }
+ #nav1
+ {
+	 float:left;
+	 background-color:lightgray;
+	 width:120px;
+	 min-height:620px;
+	 padding:10px;
+ }
+ #nav2
+ {
+	
+	background-color:green;
+	min-height:520px;
+	width:110px;
+	padding:10px;
+	
+	  
+	 
+ }
+ #content
+ {
+	 float:left;
+	 padding:20px;
+	 width:600px;
+ }
+ #ad
+ {
+	 float:left;
+	 width:200px;
+	 min-height:620px;
+	 padding:10px;
+	 background-color:lightgray;
+ }
+ #footer
+ {
+	 clear:both;
+	 background-color:black;
+	 color:white;
+	 text-align:center;
+	 padding:10px;
+ }

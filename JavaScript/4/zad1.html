@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8">
+	<title>Zad1</title>
+</head>
+<body>
+	<fieldset>
+	<legend>Kula - obiętość i powierzchnia</legend>
+	<br>
+	<div id="abc">
+	<p>Promień: <input type="text" id="promien"/></p>
+	<br>
+	<form id="obliczenia">
+	<p>Co obliczyć??<p>
+		<p>Pole powierzchni kuli<input type="radio" value="m1" class="t" name="wybor"/></p>
+		<p>Obiętość kuli<input type="radio" value="m2" class="t" name="wybor"/></p>
+	</form>
+	<input type="button" id="wykonaj" value="Oblicz"/>
+	<br>
+	<p>Wynik:</p>
+	<div id="wynik">
+	
+	</div>
+	</fieldset>
+<script>
+	document.getElementById("wykonaj").onclick=glowna;
+	
+	function glowna(){
+		
+	var liczba=document.getElementById("promien").value;
+		var wynik=document.getElementById("wynik");
+		
+		if(liczba==" " || typeof(liczba)=== "number" || liczba>0 ){
+		var checkedIndex = -1;
+		var obliczenia = document.getElementById('obliczenia').wybor;
+		var obliczenia_wybor="";
+		
+		
+		for (var i=0; i<obliczenia.length; i++) {
+			if (obliczenia[i].checked) {
+				checkedIndex = i;
+				obliczenia_wybor=obliczenia[i].value;
+				break;
+			}
+		}
+		
+		if (checkedIndex == -1) {
+			alert('Nie podałeś co chcesz obliczyć!');
+		}
+		
+		if(obliczenia_wybor=="m1"){
+		
+		 wynik.innerHTML="P=4*&pi;*r<sup>2</sup>= "+(4*Math.PI*liczba*liczba).toFixed(2);
+		}
+		if(obliczenia_wybor=="m2"){
+		
+		wynik.innerHTML="P=4/3*&pi;*r<sup>3</sup>= "+(4/3*Math.PI*liczba*liczba*liczba).toFixed(2);
+		}
+	
+	}else{
+			wynik.innerHTML=("Nie podałeś promienia lub dane są niepoprawne");
+	}
+	}
+</script>
+</body>
+</html>

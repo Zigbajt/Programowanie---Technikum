@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Galeria</title>
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<script>
+	function pokaz() 
+	{
+		document.getElementById("zwieksz").innerHTML = "<img src=\"zdj.jpg\">" 
+		document.getElementById("zwieksz").style.zIndex = "2";
+		document.getElementById("menu"+numer).style.opacity = "1";
+		
+	}
+	function zamknij() 
+	{
+		document.getElementById("zwieksz").innerHTML = "<img src=\"zdj.jpg\">" 
+		var warstwa = document.getElementById("naszaWarstwa");
+		warstwa.style.opacity= "0";
+		warstwa.style.zindex = "-1";
+		
+	}
+</script>
+</head>
+<body onload="zmienmenu()">
+	<header>
+	<div id="tytul"><h1> Galeria </h1></div>
+	
+	<div id="tytul1">
+	<nav>
+		<a href="#"><div id="menu1">Nowe</div></a>
+		<a href="#"><div id="menu2">Kategoria</div></a>
+		<a href="#"><div id="menu3">Kontakt</div></a>
+		<a href="#"><div id="menu4">Informacje</div></a>
+	</nav>
+	</div>
+		<div style="clear:both;"></div>
+	
+	</header>
+	<main>
+		<div class="photo" onclick="pokaz(1)"><img src="img/a1.jpg"></div>
+		<div class="photo" onclick="pokaz(2)"><a href="#"><img src="img/a2.jpg"></a></div>
+		<div class="photo" onclick="pokaz(3)"><a href="#"><img src="img/a3.jpg"></a></div>
+		<div style="clear:both;"></div>
+		<div class="photo" onclick="pokaz(4)"><a href="#"><img src="img/a4.jpg"></a></div>
+		<div class="photo" onclick="pokaz(5)"><a href="#"><img src="img/a5.jpg"></a></div>
+		<div class="photo" onclick="pokaz(6)"><a href="#"><img src="img/a6.jpg"></a></div>
+		<div style="clear:both;"></div>
+		
+	    <div id="zwieksz"><button type="submit" onclick="zamknij()" name="..." value="...">X</button></div>
+	</main>
+	
+	<footer>
+		<div id="text"><p>Dawid Maciejski</p></div>
+	</footer>
+</body>
+</html>

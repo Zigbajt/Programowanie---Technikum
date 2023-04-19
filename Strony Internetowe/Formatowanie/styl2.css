@@ -1,0 +1,61 @@
+body{
+	font-family:Georgia;
+	margin:0px;
+	font
+}
+#baner{
+	background-color:#824555;
+	color:#FFF;
+	text-align:center;
+	padding:20px;
+	
+}
+#panel1{
+	background-color:#A26475;
+	color:#FFF;
+	width:30%;
+	height:300px;
+	float:left;
+}
+#panel2{
+	background-color:#A26475;
+	color:#FFF;
+	width:30%;
+	height:300px;
+	float:left;
+}
+#panel3{
+	background-color:#A26475;
+	color:#FFF;
+	width:40%;
+	height:300px;
+	text-align:right;
+	float:left;
+}
+#container{
+	background-color:#F0EAE2;
+	padding:50px;
+	
+}
+#footer{
+	background-color:#824555;
+	color:#FFF;
+	text-align:center;
+	padding:20px;
+	
+}
+table, tr, td{
+	border-collapse:collapse;
+	border:2px, solid, #69293A;
+	padding:7px;
+
+}
+ul{
+	list-style-type:square;
+	
+}
+button{
+	width:10px;
+	height:20px;
+	
+}

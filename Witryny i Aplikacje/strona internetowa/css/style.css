@@ -1,0 +1,42 @@
+body{
+	background-image:url(../img/  );
+	font-size:30px;
+	text-align:center;
+	color:white;
+}
+#container{
+	width:1000px;
+	margin:auto;
+}
+.logo{
+	height:100px;
+	background-image:url(../img/  );
+}
+.nav{
+	height:50px;
+}
+.nav1{
+	float:left;
+	width:200px;
+	background-color:#346578;
+}
+.nav2{
+	float:left;
+	width:200px;
+	background-color:blue;
+}
+.nav3{
+	float:left;
+	width:200px;
+	background-color:orange;
+}
+.nav4{
+	float:left;
+	width:200px;
+	background-color:black;
+}
+.nav5{
+	float:left;
+	width:200px;
+	background-color:#468976;
+}

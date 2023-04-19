@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<title>Obsługa select</title>
+
+	</head>
+<body>
+	<form id="form">
+		<p><label for="netto">netto:</label>&nbsp;&nbsp;<input type="text" id="netto" name="netto"></p>
+		<p>vat:<select name="vat" id="vat">
+			<option value=""></option>
+			<option value="0.23">23%</option>
+			<option value="0.08">8%</option>
+			<option value="0">0%</option>
+		</select>
+		</p>
+		<p><label for="brutto">brutto:</label>&nbsp;&nbsp;<input type="text" id="brutto" name="brutto"></p>
+		<p><input type="submit" id="oblicz" value="Oblicz"></p>
+	</form>
+	 
+	<script >
+	/*skrypt obsługuje pobranie i zmianę  wartości pola tekstowego formularza oraz odwołanie się do pola select
+	 wyświetla w polu brutto cenę brutto obliczoną na podstawie ceny netto podanej przez użytkownika w polu netto oraz wybranej stawki vat,
+	wyswietla komunikaty w przypadku pustego pola netto oraz tekstu wpisanego w pole netto oraz braku wyboru stawki*/
+	
+	document.getElementById("oblicz").onclick=Oblicz;
+	
+	
+	function Oblicz() {
+	
+	var brutto = document.getElementById("brutto");
+	
+	var netto = document.getElementById("netto").value;
+	var vat = document.getElementById("vat");
+	vat_wybor=vat.options[vat.selectedIndex].value;
+		if (netto == '') {
+							
+			brutto.value = "Nie podales ceny!";
+			
+			return false;
+		}
+		if (isNaN(netto)) {
+			brutto.value = "Nie podales liczby!";
+			return false;
+		}
+		if (vat_wybor == '') {
+							
+			brutto.value = "Nie wybrałeś stawki vat!";
+			
+			return false;
+		}
+		else {
+			netto *= 1;
+			vat_wybor*=1;
+						
+		}
+
+		
+
+		brutto.value=netto+netto*vat_wybor;// cena brutto=cena netto + centa netto *vat
+		
+
+		return false; 
+	}
+
+	</script>
+</body>
+</html>

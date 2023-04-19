@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<title>Obsługa select</title>
+
+<script>
+function odliczanieDo(rok,miesiac,dzien){
+    var aktualnyCzas = new Date();
+    var dataWydarzenia = new Date(rok,miesiac,dzien);
+    var pozostalyCzas = dataWydarzenia.getTime() - aktualnyCzas.getTime();
+     
+    if (pozostalyCzas > 0){                      
+        var s = pozostalyCzas / 1000;
+        var min = s / 60;
+        var h = min / 60;
+		var dni = h / 24;
+ 
+        var s1 = Math.floor(s  % 60);    
+        var min1 = Math.floor(min % 60);
+        var h1 = Math.floor(h % 24);
+		var dni1 = Math.floor(dni);
+         
+        if (min1 < 10)
+          min1 = "0" + min1;
+        if (s1 < 10)
+          s1 = "0" + s1;
+         
+        document.getElementById("odliczanie").innerHTML=dni1 +"D : " + h1 + "h : " + min1 + "m : " + s1+"s";
+		
+    }else
+        document.getElementById("odliczanie").innerHTML= " Wydarzenie już mineło :( ";
+	setTimeout("odliczanieDo(2018,11,31)",1000);
+}
+function odliczanieOd(rok,miesiac,dzien){
+    var aktualnyCzas = new Date();
+    var dataWydarzenia = new Date(rok,miesiac,dzien);
+    var czas = aktualnyCzas.getTime() - dataWydarzenia.getTime();
+                          
+        var s = czas / 1000;
+        var min = s / 60;
+        var h = min / 60;
+		var dni = h / 24;
+ 
+        var s1 = Math.floor(s  % 60);    
+        var min1 = Math.floor(min % 60);
+        var h1 = Math.floor(h % 24);
+		var dni1 = Math.floor(dni);
+         
+        if (min1 < 10)
+          min1 = "0" + min1;
+        if (s1 < 10)
+          s1 = "0" + s1;
+         
+        document.getElementById("odliczanie1").innerHTML=dni1 +"D : " + h1 + "h : " + min1 + "m : " + s1+"s";
+		
+    
+	setTimeout("odliczanieOd(2018,8,1)",1000);
+}         
+</script>
+</head>
+<body onload="odliczanieOd(2018,8,1),odliczanieDo(2018,11,31)">
+	<div class="header" style="float:left;">Do sylwestra:&nbsp </div>
+	<div id="odliczanie" style="float:left; color:red;"> </div>
+	<div style="clear:both;"></div><br/>
+	<div class="header" style="float:left;">Od począdku roku szkolnego:&nbsp</div>
+	<div id="odliczanie1" style="float:left; color:red;"> </div>
+</body>
+</html>

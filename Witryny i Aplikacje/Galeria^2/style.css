@@ -1,0 +1,16 @@
+body
+{
+    background-image:url(http://www.publicdomainpictures.net/pictures/60000/velka/pink-background.jpg);
+}
+#container {
+	text-align:center;
+    margin:30px auto;
+    width:1200px;
+}
+.floating-box {
+    display: inline-block;
+    width: 200px;
+    height: 120px;
+    margin: 5px;
+    border: 1px solid black;  
+}

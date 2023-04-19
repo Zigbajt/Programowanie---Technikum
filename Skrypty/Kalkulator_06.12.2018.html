@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+  <title>zadanie</title>
+  <meta charset="utf-8">
+</head>
+<body>
+  <script>
+	var system =parseInt(prompt("Wybierz system"));
+	var dziesietny =parseInt(prompt("Podaj liczbę w systemie dzisiętnym"));
+	var reszta;
+	var wynik="";
+	
+	if(system==2){
+		while(dziesietny>0){
+			reszta=dziesietny%2;
+			dziesietny=Math.floor(dziesietny/2);
+			wynik=reszta+wynik;
+	
+	}
+	}
+	else if(system==8){
+		while(dziesietny>0){
+			reszta=dziesietny%8;
+			dziesietny=Math.floor(dziesietny/8);
+			wynik=reszta+wynik;
+
+	}
+	}
+	else if(system==16){
+		var A;
+		
+		while(dziesietny>0){
+			reszta=dziesietny%16;
+			if (reszta==10){
+				reszta="A";
+				}
+			if (reszta==11){
+				reszta="B";
+				}
+			if (reszta==12){
+				reszta="C";
+				}
+			if (reszta==13){
+				reszta="D";
+				}
+			if (reszta==14){
+				reszta="E";
+				}
+			if (reszta==15){
+				reszta="F";
+				}
+			dziesietny=Math.floor(dziesietny/16);
+			wynik=reszta+wynik;	
+	}
+	}
+	
+	else if(system != 2 | 8 | 16){
+		document.write("Nie poprawne dane: Wpisz poprawny system");
+	}
+	document.write(wynik);
+	
+	
+  
+  </script>
+</body>
+</html>

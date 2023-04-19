@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="utf-8"/>
+		<title>Formatowanie</title>
+		<link rel="stylesheet" href="styl2.css"/>
+	</head>
+	<body>
+		<div id="baner">
+			<h1>Formatowanie dokumentów HTML</h1>
+		</div>
+		<div id="panel1">
+			<h2>Przykład listy - hobby</h2>
+			<ul>
+				<li>muzyka</li>
+				<li>
+					turystyka
+					<ol>
+						<li>góry</li>
+						<li>jeziora</li>
+						<li>na rowerze</li>
+					</ol>
+				</li>
+				<li>książki</li>
+			</ul>
+		</div>
+		<div id="panel2">
+			<h2>Przykład tabeli - rozkład dnia</h2>
+			<table border="1">
+				<tr>
+					<td>Pora dnia</td>
+					<td>obowiązki</td>
+				</tr>
+				<tr>
+					<td>rano</td>
+					<td>nauka</td>
+				</tr>
+				<tr>
+					<td>południe</td>
+					<td>zajęcia dodatkowe</td>
+				</tr>
+				<tr>
+					<td>popołudnie</td>
+					<td rowspan="2">moje hobby</td>
+				</tr>
+				<tr>
+					<td>wieczór</td>
+				</tr>
+			</table>
+		</div>
+		<div id="panel3">
+			<img src="nazwa.png" alt="technologia web">
+		</div>
+		<div id="container">
+			<p>Podaj rozmiar tekstu w procentach:</p>
+			<p><input type="number" id="procent"/> %</p>
+			<select name="rodzaj" id="rodzaj">
+				<option value="normal">prosty</option>
+				<option value="italic">kursywa</option>
+			</select>
+			<p>Jakim kolorem sformatować tekst?  Wybierz przycisk</p>
+			<button class="przycisk" value="red" style="background-color:red;"></button>
+			<button class="przycisk" value="green" style="background-color:green;"></button>
+			<button class="przycisk" value="blue" style="background-color:blue;"></button>
+		
+			<p id="zmiana">To jest przykład paragrafu, który może być dowolnie formatowany przez Java Script</p>
+		</div>
+		<div id="footer">
+			<p>Formatowaniem tekstu zajmował się: <i>Dawid Maciejski</i></p>
+			<a target="_blank" href="http://formatowanie.pl">Odwiedź także</a>
+		</div>
+		
+		<script>
+		
+			var buttons=document.querySelectorAll(".przycisk");
+			
+			for(var i=0;i<buttons.length;i++){
+				buttons[i].addEventListener('click',function(){
+				var procent=document.getElementById("procent").value;
+				var rodzaj = document.getElementById("rodzaj");
+				rodzaj_wybor = rodzaj.options[rodzaj.selectedIndex].value;
+				var tekst=document.getElementById("zmiana");
+				
+				if(procent=="" || isNaN(procent)){
+					alert("źle podany procent");
+					return false;
+				}
+				zmiana.style.fontSize=procent+"px";
+				zmiana.style.fontStyle=rodzaj_wybor;
+				zmiana.style.color=this.value;
+		
+			});
+			}
+			
+		</script>
+	
+	
+	</body>
+</html>

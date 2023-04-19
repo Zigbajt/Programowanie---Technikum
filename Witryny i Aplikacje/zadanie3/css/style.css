@@ -1,0 +1,52 @@
+body
+{
+	background-image:url(../img/stressed_linen.png);
+	margin:0;
+    font-family:"Verdana";
+    font-size:30px;
+	color:white;
+	text-align:center;
+}
+#container{
+	background-color:white;
+	width:900px;
+	height:600px;
+	margin:auto;
+}
+.logo{
+	background-color:gray;
+	width:900px;
+	height:60px;
+}
+.menu{
+	background-color:blue;
+	width:900px;
+	height:40px;
+}
+.nav
+{
+	background-color:darkblue;
+	width:200px;
+	height:460px;
+	float:left;
+	padding-top:50px;
+}
+.content{
+	background-color:skyblue;
+	width:530px;
+	height:460px;
+	float:left;
+	padding-top:50px;
+}
+.sidebar{
+	background-color:teal;
+	width:170px;
+	height:510px;
+	float:left;
+	padding-top:50;
+}
+.footer{
+	background-color:royalblue;
+	width:900px;
+	height:40px;
+	clear:both;

@@ -1,0 +1,44 @@
+body
+{
+	background-color:#342313;
+	color:black;
+}
+#container
+{
+	margin-left:auto;
+	margin-right:auto;
+	height:1200px;
+	width:1200px;
+    
+}
+#nav
+{
+	color:white;
+	text-align:center;
+}
+.cvb1
+{
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:10px;
+	margin-bottom:10px;
+	width:400px;
+	height:150px;
+}
+a:link, a:visited {
+	padding-top:50px;
+    background-color: #E8410C;
+    color: black;
+    border: 2px solid #FF0000;
+    width:400px;
+	height:100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+	cursor:help
+}
+
+a:hover, a:active {
+    background-color: #C2360A;
+    color: white;
+}-

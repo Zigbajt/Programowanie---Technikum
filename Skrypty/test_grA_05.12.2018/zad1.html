@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<title>Zadanie1</title>
+	<script >
+		var tab = [];
+		var x=parseInt(prompt("podaaj ilość wpisów w tablicy:"));
+		var znaki=0;
+	
+		for(var i=0;i<x;i++){
+		tab.push(prompt("Podaj wpis ("+(i+1)+"):"));
+		}
+		document.write("długość tablicy = "+tab.length + "<br/>");
+		for(var j=0;j < tab.length;j++){
+		text = tab[j];
+		znaki= text.length;
+		document.write(text+" ilość znaków: "+znaki+"<br/>");
+		}
+		
+		
+		
+		
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8">
+	<title> </title>
+	<link rel="stylesheet" href="style.css"/>
+	<link rel="stylesheet" href="css/fontello.css"/>
+	<script> </script>
+</head>
+<body>
+	<div class="grid-container">
+		<div class="grid-socialmedia">
+			<div class="item1"><a href="#" class=""><i class="demo-icon icon-facebook-rect"></i></a></div>
+			<div class="item2"><a href="#" class=""><i class="demo-icon icon-twitter-bird"></i></a></div>
+			<div class="item3"><a href="#" class=""><i class="demo-icon icon-googleplus-rect"></i></a></div>
+			<div class="item4"><a href="#" class=""><i class="demo-icon icon-skype"></i></a></div>
+			<div class="item5"><a href="#" class=""><i class="demo-icon icon-instagram"></i></a></div>
+			<div class="item6"><a href="#" class=""><i class=""></i></a></div>
+			<div class="item7"><a href="#" class=""><i class="demo-icon icon-search"></i></a></div>
+		</div>
+		<div class="grid-menu">
+			<div class="item8"><img src="img/napis.jpg" style="width:150px"></div>
+			<div class="item9"><a href="index.html" class="">
+				<i class="demo-icon icon-home"></i>
+				<p>HOME</p></a>
+			</div>
+			<div class="item10"><a href="#" class="">
+				<i class="demo-icon icon-pitch"></i>
+				<p>KALKULATOR</p></a>
+			</div>
+			<div class="item11"><a href="kal2.html" class="">
+				<i class="demo-icon icon-calculator"></i>
+				<p>KALKULATOR</p></a>
+			</div>	
+			<div class="item12"><a href="blog.html" class="">
+				<i class="demo-icon icon-news"></i>
+				<p>BLOG</p></a>
+			</div>	
+			<div class="item13"><a href="kontakt.html" class="">
+				<i class="demo-icon icon-post"></i>
+				<p>KONTAKT</p></a>
+			</div>
+		</div>
+		<div class="item14">
+			<form id="kalkulator1" name="Formularz">
+				<h4>Waga:&nbsp;&nbsp;&nbsp;<input type="text" id="waga" name="waga" />kg</h4>
+				<h4>Wzrost:&nbsp;<input type="text" id="wzrost" name="wzrost" />cm</p>
+				<h4>
+					<fieldset>
+						<legend>Płeć</legend>
+						<h4>Kobieta:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" value="Kobieta" name="plec" /></h4>
+						<h4>Mężczyzna:&nbsp;<input type="radio" value="Mężczyzna" name="plec" checked/></h4>
+					</fieldset>
+				</h4>
+				<input type="button" id="oblicz1" value="Oblicz BMI" onclick="oblicz();"/>
+			</form>
+			<div id="wynikk">
+				<h4>Wynik:&nbsp;<input type="text" id="wynik" name="wynik" /></p></h4>
+				<p id="dane">
+				Zakresy wartości BMI:</br></br>
+
+				mniej niż 16 - wygłodzenie;&nbsp;
+				&nbsp;16 - 16.99 - wychudzenie;&nbsp;
+				&nbsp;17 - 18.49 - niedowaga;&nbsp;
+				&nbsp;18.5 - 24.99 - wartość prawidłowa;&nbsp;
+				&nbsp;25 - 29.99 - nadwaga;&nbsp;
+				&nbsp;30 - 34.99 - I stopień otyłości;&nbsp;
+				&nbsp;35 - 39.99 - II stopień otyłości;&nbsp;
+				&nbsp;powyżej 40 - otyłość skrajna;
+				</p>
+			</div>
+		</div>
+		
+		<div class="item16"><p>© Anton Adamovych;Dawid Maciejski - 3C_2019 </p> </div>
+	
+</div>
+<script>
+    function oblicz(){
+        var waga = parseInt(document.getElementById("waga").value);
+        var wzrost = parseInt(document.getElementById("wzrost").value);
+        var plec = document.getElementsByName('plec');
+        var plec_value;
+        for(var i = 0; i < plec.length; i++){
+            if(plec[i].checked){
+                plec_value = plec[i].value;
+            }
+        }
+        var bmi = waga/((wzrost/100)*(wzrost/100))
+        document.getElementById("wynik").value = bmi.toFixed(2);
+    }
+</script>
+</body>
+</html>

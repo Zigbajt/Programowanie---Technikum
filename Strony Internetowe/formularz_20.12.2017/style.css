@@ -1,0 +1,46 @@
+body{
+	/* Background pattern from Subtle Patterns */
+	background-image:url("img/tlo.png");
+	text-align:center;
+	text:center;
+	margin:  auto;
+}
+#logo{
+	width:1000px;
+	margin-left:auto;
+	margin-right:auto;
+}
+#logo1{
+	float:left;
+	height:100px;
+	
+	
+}
+#logo2{
+	height:100px;
+	padding:10px;
+}
+#container{
+	clear:both;
+	width:1000px;
+    margin-left:auto;
+	margin-right:auto;
+}
+#container1{
+	width:500px;
+	height:400px;
+	float:left;
+	margin-left:auto;
+	margin-right:auto;
+	
+}
+#container2{
+	float:left;
+	width:500px;
+}
+#footer{
+	clear:both;
+}
+a{
+    text-decoration:none;
+  }

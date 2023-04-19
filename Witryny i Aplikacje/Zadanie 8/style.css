@@ -1,0 +1,66 @@
+body{
+	background-image: url(tlo.jpg);
+	text-align:center;
+}
+#container{
+	width:1000px;
+	margin:30px auto;
+	color:#cfb53b;
+}
+#logo{
+	text-align:center;
+	letter-spacing:5px;
+	font-weight:15px;
+	
+	
+}
+#nav1{
+	margin-left:32px;
+	margin-right:32px;
+	margin-top:20px;
+	margin-bottom:10px;
+	
+	
+}
+.img1{
+	width:200px;
+	height:120px;
+	float:left;
+	border:2px solid black;
+	margin:15px;
+	
+	
+}
+#nav2{
+	clear:both;
+	margin-left:149px;
+	margin-right:149px;
+	margin-top:20px;
+	margin-bottom:10px;
+	
+}
+.img2{
+	float:left;
+	border:2px solid black;
+	width:200px;
+	height:120px;
+	margin:15px;
+}
+#nav3{
+	clear:both;
+	margin-left:262px;
+	margin-right:262px;
+	margin-top:20px;
+	margin-bottom:10px;
+	
+}
+.img3{
+	float:left;
+	border:2px solid black;
+	width:200px;
+	height:120px;
+	margin:15px;
+}
+#footer{
+	clear:both;
+}
